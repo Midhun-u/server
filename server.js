@@ -21,3 +21,5 @@ app.get("/" , (request , response) => {
 app.listen(PORT , () => {
     console.log("Server running")
 })
+
+export default app
