@@ -1,4 +1,5 @@
 import express from 'express'
+import os from 'os'
 
 const PORT = process.env.PORT || 3000
 const app = express()
@@ -20,6 +21,7 @@ app.get("/" , (request , response) => {
 
 app.listen(PORT , () => {
     console.log("Server running")
+    console.log(os.platform())
 })
 
 export default app
