@@ -22,6 +22,7 @@ app.get("/" , (request , response) => {
 app.listen(PORT , () => {
     console.log("Server running")
     console.log(os.platform())
+    console.log(os.arch())
 })
 
 export default app
